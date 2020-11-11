@@ -1,0 +1,120 @@
+name:                its
+version:             0.1.0.0
+github:              "githubuser/its"
+license:             BSD3
+author:              "Author name here"
+maintainer:          "example@example.com"
+copyright:           "2020 Author name here"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/githubuser/its#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- csv
+- attoparsec
+- text
+- vector
+- Chart-diagrams
+- Chart-cairo
+- Chart
+- statistics
+- random-fu
+
+
+
+
+
+library:
+  source-dirs: src
+
+executables:
+  main:
+    main:                app/Main.hs
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - its
+
+  multiple:
+    main:                app/MultipleRegression.hs
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - its
+
+  readData:
+    main:                app/ReadData.hs
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - its
+
+  coef:
+    main:                app/Coef.hs
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - its
+
+  spearman:
+    main:                app/Spearman.hs
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - its
+
+  bernoulli:
+    main:                app/Bernoulli.hs
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - its
+
+
+
+tests:
+  its-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - its
+
+
+
+
+
+
+
+
+
+
+
+
+

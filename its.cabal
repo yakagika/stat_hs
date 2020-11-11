@@ -1,0 +1,187 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: b0d7b24217e5560fe37ca4fe66eca88c32e4cfaf4125ce3016825fd50eec33d8
+
+name:           its
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/its#readme>
+homepage:       https://github.com/githubuser/its#readme
+bug-reports:    https://github.com/githubuser/its/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2020 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/its
+
+library
+  exposed-modules:
+      BasicStatistics
+      Graph
+      Lib
+      Maximize
+      Sturges
+      Third
+  other-modules:
+      Paths_its
+  hs-source-dirs:
+      src
+  build-depends:
+      Chart
+    , Chart-cairo
+    , Chart-diagrams
+    , attoparsec
+    , base >=4.7 && <5
+    , csv
+    , random-fu
+    , statistics
+    , text
+    , vector
+  default-language: Haskell2010
+
+executable bernoulli
+  main-is: app/Bernoulli.hs
+  other-modules:
+      Paths_its
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      Chart
+    , Chart-cairo
+    , Chart-diagrams
+    , attoparsec
+    , base >=4.7 && <5
+    , csv
+    , its
+    , random-fu
+    , statistics
+    , text
+    , vector
+  default-language: Haskell2010
+
+executable coef
+  main-is: app/Coef.hs
+  other-modules:
+      Paths_its
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      Chart
+    , Chart-cairo
+    , Chart-diagrams
+    , attoparsec
+    , base >=4.7 && <5
+    , csv
+    , its
+    , random-fu
+    , statistics
+    , text
+    , vector
+  default-language: Haskell2010
+
+executable main
+  main-is: app/Main.hs
+  other-modules:
+      Paths_its
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      Chart
+    , Chart-cairo
+    , Chart-diagrams
+    , attoparsec
+    , base >=4.7 && <5
+    , csv
+    , its
+    , random-fu
+    , statistics
+    , text
+    , vector
+  default-language: Haskell2010
+
+executable multiple
+  main-is: app/MultipleRegression.hs
+  other-modules:
+      Paths_its
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      Chart
+    , Chart-cairo
+    , Chart-diagrams
+    , attoparsec
+    , base >=4.7 && <5
+    , csv
+    , its
+    , random-fu
+    , statistics
+    , text
+    , vector
+  default-language: Haskell2010
+
+executable readData
+  main-is: app/ReadData.hs
+  other-modules:
+      Paths_its
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      Chart
+    , Chart-cairo
+    , Chart-diagrams
+    , attoparsec
+    , base >=4.7 && <5
+    , csv
+    , its
+    , random-fu
+    , statistics
+    , text
+    , vector
+  default-language: Haskell2010
+
+executable spearman
+  main-is: app/Spearman.hs
+  other-modules:
+      Paths_its
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      Chart
+    , Chart-cairo
+    , Chart-diagrams
+    , attoparsec
+    , base >=4.7 && <5
+    , csv
+    , its
+    , random-fu
+    , statistics
+    , text
+    , vector
+  default-language: Haskell2010
+
+test-suite its-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_its
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      Chart
+    , Chart-cairo
+    , Chart-diagrams
+    , attoparsec
+    , base >=4.7 && <5
+    , csv
+    , its
+    , random-fu
+    , statistics
+    , text
+    , vector
+  default-language: Haskell2010
