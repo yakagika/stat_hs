@@ -12,6 +12,20 @@ packages:
   original:
     hackage: Chart-cairo-1.9.3@sha256:f484a7194ca08ed67f02aa626e2f8f4d1a9b50624e0d50e3ced62958f7481cca,925
 - completed:
+    hackage: permutation-0.5.0.5@sha256:4982a4c9e2f82ec7925a098abca629d0af80e7465e4527d5fe9f4fded4cb2a53,2717
+    pantry-tree:
+      size: 1607
+      sha256: 5e92fa42f6ab70b30825f0834f0b45297356c47c0cf1c552b41c89d06ff139c7
+  original:
+    hackage: permutation-0.5.0.5@sha256:4982a4c9e2f82ec7925a098abca629d0af80e7465e4527d5fe9f4fded4cb2a53,2717
+- completed:
+    hackage: random-fu-0.2.7.7@sha256:55c62bc8e7a2970d4706f50b391559594ef1a8b5e71c0fbd2c9e30d5adafb9ab,4612
+    pantry-tree:
+      size: 2455
+      sha256: 176dbae2762bd8be0de0e2ce2b0f30904d2578b6278e2f14652881f80641cf9b
+  original:
+    hackage: random-fu-0.2.7.7@sha256:55c62bc8e7a2970d4706f50b391559594ef1a8b5e71c0fbd2c9e30d5adafb9ab,4612
+- completed:
     hackage: cairo-0.13.8.1@sha256:1938aaeb5d3504678d995774dfe870f6b66cbd43d336b692fa8779b23b2b67a9,4075
     pantry-tree:
       size: 2830
@@ -19,33 +33,19 @@ packages:
   original:
     hackage: cairo-0.13.8.1@sha256:1938aaeb5d3504678d995774dfe870f6b66cbd43d336b692fa8779b23b2b67a9,4075
 - completed:
-    hackage: gtk2hs-buildtools-0.13.8.0@sha256:132f38155fc677430a47ea750918973161c876fb6f281d342ac2f07eb99229ce,5238
-    pantry-tree:
-      size: 3588
-      sha256: 4552e3c0f2ef0f16285c38898d7e2b6aeea67d4e37cd203b0c82f70592096c45
-  original:
-    hackage: gtk2hs-buildtools-0.13.8.0@sha256:132f38155fc677430a47ea750918973161c876fb6f281d342ac2f07eb99229ce,5238
-- completed:
-    hackage: random-fu-0.2.7.6@sha256:4084403c909d5b8e3b88b955432099912ca672305abeff3c51adc825810ec08e,4595
-    pantry-tree:
-      size: 2455
-      sha256: 649fe7be0390fc4c1fdd4e211053463559486d044ff1b347ac16d1a9a4439e6a
-  original:
-    hackage: random-fu-0.2.7.6@sha256:4084403c909d5b8e3b88b955432099912ca672305abeff3c51adc825810ec08e,4595
-- completed:
-    hackage: random-1.2.0@sha256:5ca8674e95c46c7eb90f520c26aea22d403625c97697275434afba66ebd32b05,5897
+    hackage: random-1.2.0@sha256:4321209c8faedc034810ea8ed0dbc4a36f1a1df97b75af024219f2f533da57de,6094
     pantry-tree:
       size: 1259
-      sha256: 8ba46c3d6b1cd0d4a4ee472922497f8d0778a1aaf7bbcac328a0b06b4d153309
+      sha256: 29ff0a7ec5bf123e2c40f849b7af163950854a6c08c68b4a1b4364ce7a515af0
   original:
-    hackage: random-1.2.0@sha256:5ca8674e95c46c7eb90f520c26aea22d403625c97697275434afba66ebd32b05,5897
+    hackage: random-1.2.0@sha256:4321209c8faedc034810ea8ed0dbc4a36f1a1df97b75af024219f2f533da57de,6094
 - completed:
-    hackage: random-source-0.3.0.10@sha256:fdcad163155df2e7df6efa38c2ea1b476908197b90dbefbf82823b2fee15e690,3919
+    hackage: random-source-0.3.0.11@sha256:f78e361474d648fb0e0112d895c3a4bca80b1e565b778d763d59614270e8779c,3132
     pantry-tree:
-      size: 917
-      sha256: 0a489af58332376dd53d67c87b746eb7d18bdb6973aa848005eb91b60d6392ec
+      size: 966
+      sha256: b33f2ee09702afd16ef3405120527ba8f3e495c20495bf5767a6da7075b04346
   original:
-    hackage: random-source-0.3.0.10@sha256:fdcad163155df2e7df6efa38c2ea1b476908197b90dbefbf82823b2fee15e690,3919
+    hackage: random-source-0.3.0.11@sha256:f78e361474d648fb0e0112d895c3a4bca80b1e565b778d763d59614270e8779c,3132
 - completed:
     hackage: rvar-0.2.0.6@sha256:d07cbb734ec307539fb58d4344b2284a1a91f41c9308f437c27ae8bada2111bf,2317
     pantry-tree:
@@ -54,6 +54,13 @@ packages:
   original:
     hackage: rvar-0.2.0.6@sha256:d07cbb734ec307539fb58d4344b2284a1a91f41c9308f437c27ae8bada2111bf,2317
 - completed:
+    hackage: splitmix-0.1.0.3@sha256:fc3aae74c467f4b608050bef53aec17904a618731df9407e655d8f3bf8c32d5c,6049
+    pantry-tree:
+      size: 1400
+      sha256: 8290f921f41c3628a6c9871502e57fd1d25f5954967afbf4ed16717fd8d3656f
+  original:
+    hackage: splitmix-0.1.0.3
+- completed:
     hackage: flexible-defaults-0.0.3@sha256:6a7ab000561e1075003cb1053dfbbb4020ae2b02916776d1479c9c3fc82f5d0d,2508
     pantry-tree:
       size: 497
@@ -61,15 +68,15 @@ packages:
   original:
     hackage: flexible-defaults-0.0.3@sha256:6a7ab000561e1075003cb1053dfbbb4020ae2b02916776d1479c9c3fc82f5d0d,2508
 - completed:
-    hackage: splitmix-0.1.0.3@sha256:fc3aae74c467f4b608050bef53aec17904a618731df9407e655d8f3bf8c32d5c,6049
+    hackage: gtk2hs-buildtools-0.13.8.0@sha256:132f38155fc677430a47ea750918973161c876fb6f281d342ac2f07eb99229ce,5238
     pantry-tree:
-      size: 1400
-      sha256: 8290f921f41c3628a6c9871502e57fd1d25f5954967afbf4ed16717fd8d3656f
+      size: 3588
+      sha256: 4552e3c0f2ef0f16285c38898d7e2b6aeea67d4e37cd203b0c82f70592096c45
   original:
-    hackage: splitmix-0.1.0.3
+    hackage: gtk2hs-buildtools-0.13.8.0@sha256:132f38155fc677430a47ea750918973161c876fb6f281d342ac2f07eb99229ce,5238
 snapshots:
 - completed:
-    size: 532413
-    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/16/21.yaml
-    sha256: 7b5cac89352fa4a88606dc6cb250aee9291f21e2e988d464065f5aa51f5de33d
-  original: lts-16.21
+    size: 532414
+    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/16/22.yaml
+    sha256: e483fb88549fc0f454c190979bf35ac91c7aceff2c0e71e7d8edd11842d772d8
+  original: lts-16.22

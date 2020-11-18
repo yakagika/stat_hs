@@ -25,14 +25,12 @@ dependencies:
 - attoparsec
 - text
 - vector
-- Chart-diagrams
 - Chart-cairo
 - Chart
 - statistics
 - random-fu
-
-
-
+- random
+- containers
 
 
 library:
@@ -93,6 +91,14 @@ executables:
     dependencies:
     - its
 
+  makeBernoulli:
+    main:                app/MakeBernoulli.hs
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - its
 
 
 tests:

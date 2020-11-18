@@ -17,7 +17,7 @@
 #
 # resolver: ./custom-snapshot.yaml
 # resolver: https://example.com/snapshots/2018-01-01.yaml
-resolver: lts-16.21
+resolver: lts-16.22
 
 # User packages to be built.
 # Various formats can be used as shown in the example below.
@@ -41,14 +41,16 @@ packages:
 #
 extra-deps:
 - Chart-cairo-1.9.3@sha256:f484a7194ca08ed67f02aa626e2f8f4d1a9b50624e0d50e3ced62958f7481cca,925
+- permutation-0.5.0.5@sha256:4982a4c9e2f82ec7925a098abca629d0af80e7465e4527d5fe9f4fded4cb2a53,2717
+- random-fu-0.2.7.7@sha256:55c62bc8e7a2970d4706f50b391559594ef1a8b5e71c0fbd2c9e30d5adafb9ab,4612
 - cairo-0.13.8.1@sha256:1938aaeb5d3504678d995774dfe870f6b66cbd43d336b692fa8779b23b2b67a9,4075
-- gtk2hs-buildtools-0.13.8.0@sha256:132f38155fc677430a47ea750918973161c876fb6f281d342ac2f07eb99229ce,5238
-- random-fu-0.2.7.6@sha256:4084403c909d5b8e3b88b955432099912ca672305abeff3c51adc825810ec08e,4595
-- random-1.2.0@sha256:5ca8674e95c46c7eb90f520c26aea22d403625c97697275434afba66ebd32b05,5897
-- random-source-0.3.0.10@sha256:fdcad163155df2e7df6efa38c2ea1b476908197b90dbefbf82823b2fee15e690,3919
+- random-1.2.0@sha256:4321209c8faedc034810ea8ed0dbc4a36f1a1df97b75af024219f2f533da57de,6094
+- random-source-0.3.0.11@sha256:f78e361474d648fb0e0112d895c3a4bca80b1e565b778d763d59614270e8779c,3132
 - rvar-0.2.0.6@sha256:d07cbb734ec307539fb58d4344b2284a1a91f41c9308f437c27ae8bada2111bf,2317
-- flexible-defaults-0.0.3@sha256:6a7ab000561e1075003cb1053dfbbb4020ae2b02916776d1479c9c3fc82f5d0d,2508
 - splitmix-0.1.0.3
+- flexible-defaults-0.0.3@sha256:6a7ab000561e1075003cb1053dfbbb4020ae2b02916776d1479c9c3fc82f5d0d,2508
+- gtk2hs-buildtools-0.13.8.0@sha256:132f38155fc677430a47ea750918973161c876fb6f281d342ac2f07eb99229ce,5238
+
 # Override default flag values for local packages and extra-deps
 # flags: {}
 

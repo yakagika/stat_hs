@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: b0d7b24217e5560fe37ca4fe66eca88c32e4cfaf4125ce3016825fd50eec33d8
+-- hash: 13556a7ba291368249ca3e39a7e48d2c7ec669a03916f00cde6cde16392a4822
 
 name:           its
 version:        0.1.0.0
@@ -31,6 +31,7 @@ library
       Graph
       Lib
       Maximize
+      Permutation
       Sturges
       Third
   other-modules:
@@ -40,10 +41,11 @@ library
   build-depends:
       Chart
     , Chart-cairo
-    , Chart-diagrams
     , attoparsec
     , base >=4.7 && <5
+    , containers
     , csv
+    , random
     , random-fu
     , statistics
     , text
@@ -58,11 +60,12 @@ executable bernoulli
   build-depends:
       Chart
     , Chart-cairo
-    , Chart-diagrams
     , attoparsec
     , base >=4.7 && <5
+    , containers
     , csv
     , its
+    , random
     , random-fu
     , statistics
     , text
@@ -77,11 +80,12 @@ executable coef
   build-depends:
       Chart
     , Chart-cairo
-    , Chart-diagrams
     , attoparsec
     , base >=4.7 && <5
+    , containers
     , csv
     , its
+    , random
     , random-fu
     , statistics
     , text
@@ -96,11 +100,32 @@ executable main
   build-depends:
       Chart
     , Chart-cairo
-    , Chart-diagrams
     , attoparsec
     , base >=4.7 && <5
+    , containers
     , csv
     , its
+    , random
+    , random-fu
+    , statistics
+    , text
+    , vector
+  default-language: Haskell2010
+
+executable makeBernoulli
+  main-is: app/MakeBernoulli.hs
+  other-modules:
+      Paths_its
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      Chart
+    , Chart-cairo
+    , attoparsec
+    , base >=4.7 && <5
+    , containers
+    , csv
+    , its
+    , random
     , random-fu
     , statistics
     , text
@@ -115,11 +140,12 @@ executable multiple
   build-depends:
       Chart
     , Chart-cairo
-    , Chart-diagrams
     , attoparsec
     , base >=4.7 && <5
+    , containers
     , csv
     , its
+    , random
     , random-fu
     , statistics
     , text
@@ -134,11 +160,12 @@ executable readData
   build-depends:
       Chart
     , Chart-cairo
-    , Chart-diagrams
     , attoparsec
     , base >=4.7 && <5
+    , containers
     , csv
     , its
+    , random
     , random-fu
     , statistics
     , text
@@ -153,11 +180,12 @@ executable spearman
   build-depends:
       Chart
     , Chart-cairo
-    , Chart-diagrams
     , attoparsec
     , base >=4.7 && <5
+    , containers
     , csv
     , its
+    , random
     , random-fu
     , statistics
     , text
@@ -175,11 +203,12 @@ test-suite its-test
   build-depends:
       Chart
     , Chart-cairo
-    , Chart-diagrams
     , attoparsec
     , base >=4.7 && <5
+    , containers
     , csv
     , its
+    , random
     , random-fu
     , statistics
     , text

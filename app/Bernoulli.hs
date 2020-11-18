@@ -1,3 +1,5 @@
+{-# LANGUAGE Strict, StrictData#-}
+
 module Main where
 
 import Data.Random
@@ -10,6 +12,12 @@ import              Graphics.Rendering.Chart.Backend.Cairo
 -- その他
 import qualified    Control.Monad                           as CM
 import qualified    Data.List                               as L
+
+bers :: RVar Double
+bers = do
+    x <- Be.bernoulli (0.525 :: Double)
+    return x
+
 
 main = do
     -- 実験回数を入力します
@@ -30,10 +38,6 @@ main = do
 
     putStrLn $ "表が出る確率は" ++ show rate
 
-bers :: RVar Double
-bers = do
-    x <- Be.bernoulli (0.6 :: Double)
-    return x
 
 culc :: [Bool] -> [Double] -> Double -> Double -> (Double, [Double])
 culc []  ys front back = let r = front / (front + back)  in (r, ys)
