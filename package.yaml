@@ -30,8 +30,6 @@ dependencies:
 - statistics
 - random-fu
 - random
-- containers
-
 
 library:
   source-dirs: src

@@ -25,6 +25,10 @@ type OutputFile = String
 type InputFile  = String
 type Label      = String
 
+type X = [Double]
+type Y = [Double]
+type Xs = [X]
+type Ys = [Y]
 
 -- | Doubleのパーサ
 {-# INLINE parseDouble #-}
@@ -59,6 +63,9 @@ plotCSV2Bar input output title
             layout_title_style . font_size .= 10
             layout_x_axis . laxis_generate .= autoIndexAxis (L.map fst values)
             plot $ fmap plotBars $ bars header (addIndexes (L.map snd values))
+
+
+
 
 
 {- | 円グラフの作成
@@ -101,6 +108,16 @@ plotCSV2Line input output title
     in toFile def output $ do
         layout_title .= title
         CM.forM_ values $ \(label,ys) -> plot $ line label [ys]
+
+{- | 折れ線グラフの作成
+X軸,Y軸のリストを与えると折れ線グラフを作成する
+-}
+plotLine :: X -> Y -> OutputFile -> Title -> IO ()
+plotLine xs ys output title
+    = toFile def output $ do
+        layout_title .= title
+        plot $ line title [L.zip xs ys]
+
 {- |
 Header
 Category

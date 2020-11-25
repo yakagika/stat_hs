@@ -14,7 +14,6 @@ import              Graphics.Rendering.Chart.Plot.Histogram (defaultNormedPlotHi
 import qualified    Control.Monad                           as CM
 import qualified    Data.List                               as L
 import qualified    Data.Vector                             as V
-import qualified    Data.Map                                as M (fromListWith,toList)
 import              Data.Tuple
 
 -- | ベルヌーイ試行をn回行った結果

@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 13556a7ba291368249ca3e39a7e48d2c7ec669a03916f00cde6cde16392a4822
+-- hash: c3b1cfe20aa905355be9149e33bb6a1a7897dafc0f268413e5714387caa53c18
 
 name:           its
 version:        0.1.0.0
@@ -32,6 +32,7 @@ library
       Lib
       Maximize
       Permutation
+      Poisson
       Sturges
       Third
   other-modules:
@@ -43,7 +44,6 @@ library
     , Chart-cairo
     , attoparsec
     , base >=4.7 && <5
-    , containers
     , csv
     , random
     , random-fu
@@ -62,7 +62,6 @@ executable bernoulli
     , Chart-cairo
     , attoparsec
     , base >=4.7 && <5
-    , containers
     , csv
     , its
     , random
@@ -82,7 +81,6 @@ executable coef
     , Chart-cairo
     , attoparsec
     , base >=4.7 && <5
-    , containers
     , csv
     , its
     , random
@@ -102,7 +100,6 @@ executable main
     , Chart-cairo
     , attoparsec
     , base >=4.7 && <5
-    , containers
     , csv
     , its
     , random
@@ -122,7 +119,6 @@ executable makeBernoulli
     , Chart-cairo
     , attoparsec
     , base >=4.7 && <5
-    , containers
     , csv
     , its
     , random
@@ -142,7 +138,6 @@ executable multiple
     , Chart-cairo
     , attoparsec
     , base >=4.7 && <5
-    , containers
     , csv
     , its
     , random
@@ -162,7 +157,6 @@ executable readData
     , Chart-cairo
     , attoparsec
     , base >=4.7 && <5
-    , containers
     , csv
     , its
     , random
@@ -182,7 +176,6 @@ executable spearman
     , Chart-cairo
     , attoparsec
     , base >=4.7 && <5
-    , containers
     , csv
     , its
     , random
@@ -205,7 +198,6 @@ test-suite its-test
     , Chart-cairo
     , attoparsec
     , base >=4.7 && <5
-    , containers
     , csv
     , its
     , random
